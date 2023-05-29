@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ratings</title>
+		  <link href="https://fonts.googleapis.com/css?family=Lato: 100,300,400,700|Luckiest+Guy|Oxygen:300,400" rel="stylesheet">
+  <link href="style.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Ratings of Top 5 Songs</h1>
+    <br />
+	<table>
+		<thead>
+		<tr>
+		   <th scope="col">Song</th>
+		   <th scope="col">Artist</th>
+		   <th scope="col">Monthly Listeners</th>
+		   <th scope="col">Alltime Plays</th>
+		  </tr>
+		</thead>
+		<tbody>
+		 <tr>
+		   <td colspan = "2">This was a demo for this one song but I couldn't find the more up to date version so this'll have to do sorry</td>
+		   <td>Rav</td>
+		   <td>457 077</td>
+		   <td>921 994</td>
+		 </tr>
+		 <tr>
+		   <td>Virtual Aerobics</td>
+			<td>Wallows</td>
+			<td>7 428 965</td>
+		   <td>14 150 432</td>
+		  </tr>
+		  <tr>
+			<td>Better at Home</td>
+			<td>Early Eyes</td>
+			<td>243 012</td>
+			<td>123 144</td>
+		  </tr>
+		  <tr>
+			<td>Tidal Waves 2</td>
+		   <td>bandanabloom</td>
+			<td>26 279</td>
+		   <td>1 068 376</td>
+		  </tr>
+		  <tr>
+			<td>Something</td>
+			<td>Dayglow</td>
+			<td>8 211 031</td>
+			<td>11 021 340</td>
+		  </tr>
+		</tbody>
+		<tfoot>
+		  <td></td>
+		  <td></td>
+		  <td></td>
+		  <td></td>
+		</tfoot>
+    </table>
+		<table>
+		<thead>
+		<tr>
+		   <th scope="col">Artist</th>
+		   <th scope="col">Monthly Listeners</th>
+		  </tr>
+		</thead>
+		<tbody>
+		 <tr>
+		   <td>St.Arnaud</td>
+		   <td>38 871</td>
+		 </tr>
+		 <tr>
+		   <td>Johnny Manchild and the Poor Bastards</td>
+		   <td>90 841</td>
+		  </tr>
+		  <tr>
+			<td>Hi I'm Chris</td>
+			<td>55 870</td>
+		  </tr>
+		  <tr>
+			<td>The Happy Fits</td>
+		    <td>1 715 471</td>
+		  </tr>
+		  <tr>
+			<td>kimfitz</td>
+			<td>2 738</td>
+		  </tr>
+		</tbody>
+		<tfoot>
+		  <td></td>
+		  <td></td>
+		</tfoot>
+    </table>
+  </body>
+</html>

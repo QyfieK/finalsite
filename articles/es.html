@@ -1,0 +1,475 @@
+<!DOCTYP	E HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Leon Bartosch Björk Portfolio">
+		<meta name="keywords" content="Portfolio, HTML, CSS, Adobe, Photoshop">
+		<meta name="author" content="Leon Bartosch Björk">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Leon's Menagerie</title>
+		<link rel="stylesheet" type="text/css" href="../hstyle.css">
+		<style>
+			body{background-color: #91FFFB; 
+			position: relative;
+			
+			}
+				.grid-container, header, footer{background-color: #37FCF5}
+			#space{
+				<!--height: 50vh;-->
+				position: absolute;
+				display: block;
+				}
+			.things{
+			display: flex;
+			justify-content: center;
+			}
+			.grid-container{
+			width: 90vw;
+			display: flex;
+			padding: 0px;
+			margin: auto;
+			overflow: hidden;
+			}
+			p{
+			width: 100%;
+			padding: 1%;
+			}
+			#curtain{
+				background-color: #000;
+				z-index: 198;
+				width: 100vw;
+				height: 100%;
+				transition: height 2s;
+				visibility: visible;
+				
+				
+				<!--z-index: 1000000;-->
+			}
+			#two{
+			background-color: #3A9AB0;
+			}
+			#three{
+			background-color: #DA4490;
+			}
+			#four{
+			background-color: #FFE74F;
+			}
+			.mCurtain{
+				height: 20vh;
+				border-radius: 0 0 25px 25px;
+				transition: height 2s;
+				z-index: -9827;
+			}
+			#contain{
+			display: none;
+			position: absolute;  
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			justify-content: center;
+			flex-direction: column;
+			padding-bottom: 10vh;
+			}
+			
+			.background1, .background2, .background3, .background4{
+			background-image: none;
+			background-color: #BFFFFD;
+			border-color: FD37B3;
+			 filter: blur(0px);
+			-webkit-filter: blur(0px);
+			border-radius: 8%;
+			}
+			.arrow{
+			margin: 15px;
+			}
+			
+			footer{
+			
+			background-color: #FF64C5;
+			height: 7vh;
+			position: absolute;
+			bottom: 0;
+			z-index: 50;
+			width: 60vw;
+			display: flex;
+			justify-content: center;
+			border-radius: 20px;
+			margin: 20vw;
+			margin-bottom: 0;
+			}
+			
+		</style>
+	</head>
+	<body onload="myFunction()">
+		<div id="space">
+			<div id = "curtain">	
+			</div>
+			<div id = "two" class="mCurtain">	
+			</div>
+			<div id = "three" class="mCurtain">	
+			</div>
+			<div id = "four" class="mCurtain">	
+			</div>
+		</div>
+		<div id="contain">
+			<div class = "arrow">
+				<a href="home.html"><img src = "../images/arrow.png" height= "40px" width= "40px" alt="back"></a>
+			</div>
+			
+			<header>
+				<h1>Energy Sources</h1>
+			</header>
+			<div class="things">
+				<div class="grid-container">
+					<p>Energikällor
+
+Med de växande frågorna kring kärnkraft och förnybar energi samt de ökande elpriserna så är det bra att vara informerad om sveriges största energikällor idag och vad framtidens energikällor kan se ut som. I denna artikel ska vi gå genom frågor gällande dagens vattenkraft och kärnkraft samt framtidens vågkraft, fusionskraft och vad de kan betyda för framtiden.
+
+Energibärare
+
+Vad är en energibärare och hur fungerar de? Det är en fråga vi ska besvara här för att göra det mer klart under de senare delarna av artikeln. Här är ett exempel på energibärare inom vattenkraft:
+Enligt artikeln “Ett hållbart energisystem” publicerad av EnergiFöretagen så är vattenkraft väldigt anpassningsbart och vattenkraft kan lagras i flera år, genom att man sparar upp vatten på en sida av dammen och släpper lös vattnet när det kan behövas. Utöver detta sättet att spara el och energi så används det av en mängd olika energibärare som värme och biobränslen. Värmen transporteras genom ett nät där enligt artikeln “Fjärrvärmenäten - distribution”- publicerad av EnergiFöretagen 30 september 2021 är ett tusental kilometer långt rörsystem under marken där varmt vatten som har hettats upp av värmeverket transporteras mellan hus och sedan tillbaka till värmeverket. Eltransporten fungerar på ett liknande sätt men elen transporteras direkt till hus från energikällan enligt artikeln “Elnätet Distribution av el” Publicerad av EnergiFöretagen 28 oktober 2021. 
+
+Nu när vi vet hur energibärare fungerar så kan vi besvara frågan på vad de är, det är någonting som har en mängd energi som kan utnyttjas av människor så inom tex ett kärnkraftverk skulle ångan i reaktorn räknas som en energibärare eller elektriciteten som produceras
+
+Vattenkraft
+
+Enligt artikeln “Så här fungerar vattenkraftverk” publicerad av Vattenfall 2021 så består vattenkraftverk av stora dammar där vatten kan lagras, när dammen är igång så öppnas det luckor i dammen där vattnet kan strömma ut,  enligt artikeln “hur fungerar vattenkraft?” publicerad av Holmen 2022 får man energi av vattenkraftverk genom att omvandla vattnets lägesenergi till mekanisk energi (summan  av kinetisk energi  och lägesenergi) detta händer eftersom vattnen faller genom en turbin, turbinens blad börjar rotera och skapa mekanisk energi, denna mekaniska energi som bildas omvandlas nu till elektrisk energi genom en generator som är kopplad till turbinen och denna turbin skapar elenergi som distribueras till elnätet efter elektriciteten har gått genom en transformator, (se figur 1)
+ 
+
+
+
+
+Vattenkrafts fördelar för miljön är många eftersom det är en av de bästa förnybara energikällorna, enligt artikeln “Är vattenkraft dåligt?” publicerad av H2 Skåne är de största fördelarna med vattenkraft är att den inte tar slut och att den har minimala klimatutsläpp, och skapar ingen restprodukt.
+
+Enligt samma artikel så är största nackdelen för miljön med vattenkraft att det har stor påverkan på omgivningen när vattenkraftverkens byggs, vattendrag förstörs, natur och djurlivet påverkas stort och ibland förstörs helt, enligt artikeln “Nackdelar med vattenkraft” publicerad av renkustlinje 5 september 2021 så har vattenkraft även långvarig påverkan på naturen, denna påverkan kommer i form av att turbinerna dödar fiskar och andra levande arter, dammarna förhindrar naturliga översvämningar som vissa arter behöver för att överleva medans de skapar onaturliga översvämningar som kan påverka andra arters levnadsmiljö.
+
+Den största säkerhetsrisken som vattenkraft har är att dammarna kan brista och skapa översvämningar, dessa översvämningar kan förstöra infrastruktur och skada många människors liv, samt så kan översvämningar påverka markens stabilitet vilket kan skapa skred och ras. Det finns 3 olika exempel på en dam som brister i Sverige enligt artikeln “Dammbrott” publicerad av vattenkraft 2022 ett dammbrott i Sysslebäck, där en person omkom och skadorna var enorma, i Noppikoski där ingen dog och skadorna var små, och en i Hästberga där den förstörde alla mänskliga konstruktioner och det nu ser ut som en spökstad
+
+
+Enligt artikeln “Tekniker för elproduktion” har vattenkrafts turbiner en verkningsgrad på 92 - 96%, detta innebär att vattenkraft är en av de effektivaste sätten att producera energi som inte går till spillo. 
+Enligt artikeln “Vattenkraft” så har Sverige 2000 vattenkraft som totalt har en installerad effekt på 16200 MW alltså att man får ut 16200 MW nyttig kraft där den egentligen skulle ha en effekt på ungefär 17000 MW om verkningsgraden hade varit 100%.
+
+16200 / 0.95 = 17 053 MW
+
+Enligt samma artikel “Vattenkraft” så har vattenkraft en produktion på 65 TWh detta hävdar artikeln är cirka 30 % av sveriges elproduktion, enligt artikeln “Hur fungerar vattenkraft” så har vattenkraft en årlig produktion mellan 50 och 75 TWh vilket denna artikel hävdar är mellan 30 och 45 procent av Sveriges elproduktion, detta innebär att det verkar rimligt att säga att vattenkraft producerar mellan 55 och 70 TWh, vilket motsvarar 35 % av elproduktionen i Sverige.
+
+Dock så är denna beräkning av verkningsgrad felaktig eftersom den beräknar inte energiförlusterna från resterande delar av vattenkraftverket, för att få den egentliga verkningsgraden så behöver vi göra några beräkningar och varför inte göra det på det högst producerande vattenkraftverket i Sverige, Stornorrfors vattenkraftverk.
+
+Enligt artikeln “Stornorrfors” så har Stornorrfors en effekt av 599 MW per sekund, en fallhöjd av 75m och ett vattenflöde av 975m3/s vilket motsvarar 975000 kg/s, eftersom effekt är mängden energi som omvandlas per tidsenhet så är Ep = mgh vilket betyder att Ep = 975000 * 9.82  * 75 = 718087500 vilket är 718,0875 * 106 J/s = 718.0875 MW på en sekund.
+Den nyttiga effekten är då 599 MW och den tillförda effekten är 718.0875 därmed blir verkningsgraden η = Enyttig / Etillförd  = 599 / 718.0875 = 0.834106  ≈ 83% vilket- är en mycket rimligare siffra än en verkningsgrad av 95%, samt så stämmer denna siffra överens med andra källor. Samt så tror jag att beräkningen som presenteras inom powerpointen är felaktig där verkningsgrad = Enyttig / Etillförd där E = Arbete / Tid och Arbete = Kraft * Sträcka, där powerpointen hävdar att effekt = kWh, vilket uttrycks k * Arbete * Tid inte Arbete / Tid vilket det egentligen ska vara enligt källor som tex videon “Effekt”. 
+
+Vågkraft
+
+Enligt artikeln “Vågkraft” publicerad av El.se 15 november 2021 så kan vågkraft fungera på flera olika sätt, det första är att man har en boj (se figur 2) vid vattenytan som är fastsatt i en linjärgenerator på botten, där vågornas rörelse upp och ner transformerar rörelse energin till elektrisk energi. 
+Det andra sättet är liknande men lite annorlunda, där generatorn istället är en del av det som gungar, denna metod är lite mindre pålitlig dock (se figur 3).
+Den sista metoden från El.se är att det sätts turbiner eller vingar under ytan, som kan direkt fånga vattenrörelser därmed direkt göra om rörelseenergi till elektrisk energi, denna metod är dock inte utvecklad och mer av en teori (se figur 4)
+
+En extra metod från artikeln “Vågkraft kan ge mer energi än sol och vind” publicerad av forskning.se 15 Oktober 2021 är att istället låta det som flyter bli träffad av vågen och därmed absorbera dess kinetiska energi och konvertera det till elektrisk energi (se figur 5).
+Enligt artikeln “Vågkraft - Waves 2.0” så transporteras elen från den drivande generatorn genom ett undervattens ställverk som fördelar ut strömmen till olika undervattens kopplingsdosor som fördelar ut strömmen till elnäten där elen kan nå konsumenter 
+(se figur 6).
+
+
+
+
+
+Figur 2		  		  Figur 3
+
+
+
+Figur 4				       Figur 5
+
+
+Figur 6
+
+Största fördelen med vågkraft är att energin är förnybar och vi människor behöver inte interagera med kraftverken för att de ska fungera enligt artikeln “fördelar och nackdelar med vågkraft” publicerad av wavecraft 2022, samt så hävdar de att vågkraftverk kan användas över längre tid än tex vindkraftverk. Enligt artikeln “Vågkraft en förnyelsebar energikälla” publicerad av Hålbartsamhälle 2 mars 2020 så är annan stor fördel med vågkraft jämfört med vindkraft att de tar mindre plats, detta innebär att vågkraft har en energitäthet upp mot 1000 gånger högre än vindkraftverk, detta gör att ytan som vågkraft tar upp är mycket än andra energikällor som t ex sol och vindkraft, vilket i sin tur gör att miljöförstörelsen som vågkraft har när det konstrueras är drastisk mindre än sol och vindkraft.
+
+Nackdelarna enligt tidigare artikeln från wavecraft är att det kan störa naturlivet och skrämma bort fiskar från fiskare, men enligt dem så kan fiskarna se detta som ett sorts naturligt rev också. En annan nackdel kommer i formen av att vågkraftverk är i nuläge antingen väldigt dyr eller går sönder alldeles för lätt, detta innebär att om vågkraften går sönder så skulle det förorena havet och lämna öppna elledningar.
+
+Det finns i princip inga säkerhetsrisker med vågkraft förutom de öppna elledningarna som tidigare nämndes och båtar kan åka in i dem om det inte sätts upp gränser, detta innebär att det nästa inte finns några säkerhetsrisker med vågkraft.
+
+Enligt artikeln “Genererar kraft ur alla vågor” av KTH 2018 så har nutidens kraftverk en verkningsgrad på 70 - 80% men forskare hoppas på en verkningsgrad som liknar vattenkraft, runt 98%, men detta är fortfarande en stor utmaning eftersom de har problem med att få energi när vindhastigheterna är låga. 
+
+Artikeln “Uppfinning ger hopp om Vattenkraft” hävdar att 10 vågkraftverk kan ge 200 - 300 kWh. En annan artikel som heter “Vågenergi och fejkad fotosyntes - fossilfri teknik att räkna med” hävdar att ett stort vågkraftverk utanför Storbritannien har en effekt av 750 kWh, men detta är en helt annan typ av vågkraftverk än vad som har blivit diskuterad tidigare.
+
+Enligt artikeln “Vågkraftverk” publicerad av my fuel cell 2015 så hade ett vågkraftverk en produktion av 1 megawatt, men i artikeln så hävdar de att vågraftveket ska byggas ut och ge en effekt av 10 megawatt vilket motsvarar en årlig produktion av 25 miljoner kWh eller 25 GWh
+
+
+Kärnkraft
+
+Figur 7
+
+Enligt artikeln “Så fungerar ett kärnkraftverk” 1 Februari 2021 av strålskyddsmyndigheten fungerar kärnkraft fungerar på samma princip som kolkraft eller andra förbränningskraftverk. Målet är att hetta upp vatten så att det övergår i gasform och får en turbin att snurra (Se Figur 7). Skillnaden är att istället för att använda kol, trä eller olja så använder man kärnbränsle, oftast uran. 
+De energiformer som förekommer i kärnkraftverk är termisk energi, kärnenergi, elektromagnetisk strålning, kinetisk energi och elektrisk energi. När uranatomerna i kärnbränslet klyvs med hjälp av neutroner så släpper det ut en stor mängd värme som får vattnet att koka. När vattnet övergår till gasform stiger det och leds genom en turbin. Den kinetiska energin i gasen övergår till elektrisk energi genom generatorn som turbinen driver.
+Den elektromagnetiska strålningen och kärnenergin avges under atomklyvningen och de är de största riskerna gällande kärnkraft.
+
+Energibäraren till en början är uranet. Energin som släpps ut när det klyvs hamnar i vattnet och hettar upp det. Efter det så omvandlas vatten till gasform och energin leds genom turbinen som blir nästa energibärare. Slutligen är det generatorn som turbinen driver som är energibäraren.
+
+Kärnkraftverks miljöpåverkan är en stor politisk fråga nuförtiden. Enligt Vattenfall är dess fördelar främst att de inte släpper ut särskild mycket växthusgaser. Bara genom saker som skyddssystem och transporter. 
+Dess nackdelar är främst att uran är icke förnybart och den långvariga förvaringen av det radioaktiva avfallet. Men till skillnad från fossila bränslen så krävs det en väldigt liten mängd uran för en större mängd energi. Avfallet behöver isoleras från naturen i åtminstone 100 000 år för att inte kontaminera miljön. Några andra nackdelar inkluderar att de kan konstrueras så att dess avfall kan användas för kärnvapen samt att ifall en olycka skulle ske så skulle stora områden vara obeboeliga väldigt länge.
+
+Det finns en del säkerhetsrisker med kärnkraft som jag redan har nämnt är att ifall en olycka skulle ske och reaktorn skulle överhetta så att radioaktivt avfall läcker ut i omgivningen så kommer det förstöra allt i omgivningen. Detta skedde i Tjernobyl på 1980-talet och gjorde så att hela området övergavs. Cancer var vanligt bland de som hade bott där och det är obeboeligt än idag. En annan säkerhetsfråga är den slutgiltiga förvaringen av det radioaktiva avfallet som bildas under klyvning. Ifall det skulle läcka ut i naturen skulle det kunna ske ännu en Tjernobyl i mindre skala.
+
+Enligt artikeln “Forsmarks Kärnkraftverk” av Strålskyddsmyndigheten publicerad den 25 juli 2017 så har en kärnreaktor en verkningsgrad på cirka 35%. Alltså för all energi som den producerar kan endast cirka en tredjedel användas. Bara 35% av all tillförd energi är nyttig energi. Detta är för att vid alla energiomvandlingar försvinner en del i form av onyttig värmeenergi. Den sammanlagda energins effekt kallas också termisk effekt av denna anledning. Den nyttiga energins effekt kallas också för eleffekt för att det är elektrisk energi som söks. 
+Vid Forsmarks kärnkraftverk finns det tre reaktorer som har de termiska effekterna 2928 MW, 3253 MW, 3300 MW respektivt.
+
+Den nyttiga energin som dessa reaktorer skulle producera är:
+
+Reaktor 1: 2928 MW * 0,35 = 1024,8 MW
+
+Reaktor 2: 3253 MW * 0,35 = 1138,55 MW
+
+Reaktor 3: 3300 MW * 0,35 = 1155 MW 
+
+Eleffekten för hela Forsmark skulle då vara:
+
+1024,8 + 1138,55 + 1155 = 3318,35 MW
+
+Detta betyder att efter en timme i bruk så har Forsmark producerat cirka 3300 MWh (Megawattimmar) elektricitet har producerats.
+Enligt Christian Holmström i artikeln “Elproduktion” på Ekonomifakta, 22 februari 2022, skrev att under 2021 stod kärnkraften för cirka 31% av all elektricitet som producerades i sverige.
+
+Christian Holmström i artikeln “Energitillförsel” på Ekonomifakta skriver att Sveriges kärnkraft har en stor energiförlust på grund av att vi inte hettar upp kylvattnet. (Kylvattnet reglerar reaktorns temperatur så att den inte överhettar.) Holmström skriver att energiförlusterna 2019 var 115 TWh.
+
+Enligt “Forsmarks produktion och driftläge” av Vattenfall så producerade ett av Sveriges kärnkraftverk, Forsmark, 25,5 TWh 2021. De skriver också att Forsmark stod för cirka en sjättedel av hela Sveriges elproduktion och att kärnkraften stod för en tredjedel av Sveriges elproduktion. Detta skulle tyda på att kärnkraften överlag producerade cirka 76,5 TWh 2021.
+
+
+Fusion
+
+Fusion är likt traditionell kärnkraft på många sätt. Skillnaden är att traditionell kärnkraft bygger på fission eller klyvningen av större atomer, medans fusion är sammansättningen av mindre atomer. De ämnena man kommer mest troligt använda är enligt Matthew Lanctot i artikeln “DOE Explains… Deuterium-Tritium Fusion Reactor Fuel”, Office of Science deuterium och tritium. Dessa är två isotoper av väte (deuterium har en extra neutron och tritium har två extra) som skulle kunna produceras relativt hållbart. 1 av 5000 väteatomer i havet är deuterium så det finns väldigt mycket av det att användas. Tritium är lite svårare då det är en radioaktiv isotop med en halveringstid på 12 år som inte förekommer ofta i naturen. Den kan dock framställas av fusion av olika litiumisotoper. 
+När dessa två förs sammans under fusionen bildas en heliumkärna, en frigjord neutron och en enorm mängd energi. Det stora problemet med detta är att det behöver vara över 100 miljon grader för det att ske. Inget material kan hantera den hettan så istället använder man sig av plasma för att hålla reaktionen. 
+
+Den största fördelen med fusion är att det producerar en enorm mängd energi. Denna energi är relativt grön. Materialet som krävs för fusion är grönt, då det antingen kan antingen produceras av litium eller är väldigt vanligt i havsvatten. Fusion har inga riktiga utsläpp, bara lite radiation som lätt kan stoppas inuti kraftverket. Den största nackdelen med fusionkraft är att de inte kan starta av sig själv och behöver en stor mängd energi för att starta reaktionen.
+
+Säkerhetsriskerna med fusion är betydligt färre än med fissionbaserade kraftverk för att åtminstone deuterium-tritium fusion producerar inte något radioaktivt avfall. Det producerar dock alfastrålning (heliumkärnor), men den är lätt att stoppa inuti kraftverket.
+
+Enligt artikeln “Fusion - Frequently Asked Questions” av International Atomic Energy Agency så kommer fusionskraftverket ITER producera omkring 500 MW och i artikeln “Advantages of Fusion” på ITERs egna hemsida så hävdar dem att energin som krävs för reaktionen kommer vara mellan 1-1,7 GW. Verkningsgraden för kraftverket skulle då vara följande:
+Tillförd energi: 1 GW = 109 W ←(Energin som är tillförd varje sekund)
+Mängd energi som används på ett år: 109 * (3600 * 24 * 365) = 3.15 * 1016 Ws
+Avgiven energi: 500 MW = 5 * 108 W
+Avgiven energi under ett år:  5 * 108 * (3600 * 24 * 365) = 1,58 * 1016 Ws
+η = Enyttig / Etillförd = 3,15 * 1016 / 1.58 * 1016 = 0.5
+
+Detta skulle tyda att verkningsgraden för ITER skulle vara 50%.
+
+Jämförelse mellan Fission och Fusion
+
+Fusion och fission må låta lika på papper, fast i verkligheten skiljer de från varandra mycket. Fission går ut på att klyva tunga atomkärnor med neutroner för att släppa ut energi medans fusion är att sätta ihop lätta atomkärnor och släppa ut energi den vägen.
+Till skillnad från fission 
+så har fusion inget radioaktivt avfall. Istället för att behöva förvara något i hundratusentals år får man istället helium. Detta helium är dock i formen av alfapartiklar, som kan orsaka mycket skada men är också formen av radiation som är lättast att stoppa.
+Fission släpper ut alfa, beta och gammastrålning vilket gör det svårare att stoppa.
+Fission kräver ingen energi för att starta upp reaktionen, bara en lös neutron. Fusion kräver dock en enorm mängd energi för att hetta upp deuteriumet och tritiumet så att de blir plasma och bildar helium. 
+
+Traditionell kärnkraft behöver icke förnybara sällsynta material som bränsle, oftast uran. Den gruvdrift som krävs för att ta fram det kan också orsaka problem för miljön. Koldioxid från maskinerna, radiation från uranet och området förstörs för djurliv när det börjar föras gruvdrift. 
+Den vanligaste formen av fusion kommer att bestå av deuterium och tritium, två väteisotoper. Tritium kan bildas genom fusion av litium och deuterium finns i stora mängder i havsvatten. Båda dessa kräver ingen större miljöpåverkan för att framställa.
+
+Fusion må hetta upp sitt bränsle till 100 miljoner grader men det är ändå säkrare än fission. Ifall något gick fel under fusionen skulle bara plasman falla sönder men ifall saker gick fel under fission så kan det sluta samma öde som tjernobyl. Cancer, död, missbildningar och lidande.
+
+En annan stor skillnad är mängden energi de båda producerar. Även fast traditionell kärnkraft är den energikällan som producerar mest idag så kan den inte jämföras med fusionskraft. Enligt “Nuclear Fusion Power” av World Nuclear Association så producerar fusion fyra gånger så mycket energi som vanliga uran fissioner.
+
+Jämförelse mellan Vågkraft & Vattenkraft
+
+Vattenkraft och vågkraft har i gemensamt att de får energi från rörelsen av vattnet, vattenkraften är dock betydligt inträngande i naturen och sättet man får energi från vattenkraft är mer “människogjord”  därför kräver vattenkraften mer underhållande, en annan anledning till att vattenkraft behöver mer underhållning än vågkraft är att vattenkraft är betydligt farligare om någonting går fel, eftersom vid dambriste kan stor del av en stads infrastruktur skadas, medans om ett vågkraft går sönder så kan djurlivet skadas.
+
+Vattenkraft i nuläget är också bättre på att producera energi eftersom tekniken för vattenkraft har blivit förbättrad över många år medans vågkraft är relativt ny, men vågkraften är mer miljövänlig eftersom den förstör inte naturen på samma sätt som vattenkraften, där vågkraften förstör djurlivet genom att introducera en turbin och separera vattendrag så har vågkraften potential att existera som ett naturligt rev för fiskarna.
+
+Vågkraften är mindre pålitlig än vattenkraft i frågan om elproduktion eftersom vattenkraft kan spara energi genom att låta det samlas i dammen därmed användas när de behövs, medans vågkraften är helt beroende på vinden och miljön omkring. Även om vågkraften är beroende på miljön så är den mer flexibel än vattenkraften i form av plats, vågkraften behöver en relativt öppen area där det blåser lite, medans vattenkraften behöver ett vattendrag som har rätt proportioner för en dam, detta innebär att vågkraft kan existera på många fler platser i världen.
+
+Vågkraft är har mycket sämre effekt på 20 - 30 kWh per vågkraftverk, medans vattenkraft har en effekt av 8.1 megawatt per vattenkraftverk, detta beror på att teknologin inte är lika utvecklad inom vågkraft som det är inom vattenkraft, en annan observation som kan göras från detta påstående är att vågkraftverk har en mycket sämre verkningsgrad på 60 - 70 % medans vattenkraft har en verkningsgrad på 98%. Resultatet av dessa två faktum kan ses i form av totala energi producerad, där vattenkraft producerade mellan 55 och 70 TWh medans vågkraft har som ideal att producera 25 GWh vilket är 0.025 TWh, detta betyder att om vågkraft uppnår ideal produktion så kommer det att producera mellan 2200 och 2800 gånger mindre energi än vattenkraft.
+
+
+
+Jämförelse mellan Vattenkraft & Fission
+
+Fission eller traditionell Kärnkraftverk har mindre klimatpåverkan än Vattenkraft, den klimatpåverkan som fission har kommer i form av radioaktivt avfall är dock mycket svårare att omhänderta. Kärnkraft har betydligt högre kostnad att skapa än vattenkraftverk, vilket innebär att det är lättare att bygga vattenkraftverk, men vattenkraftverk kräver vissa förhållanden för att byggas (vattendrag). Miljömässigt är dock kärnkraftverk bättre eftersom de påverkar generellt miljön mindre efter de är byggda, medans vattenkraftverk har mer oavbrutet och ihållande miljöpåverkan.
+
+Säkerhetsriskerna av vattenkraftverk och kärnkraftverk är liknande, om det går fel så har båda potential att förstöra infrastruktur över en längre tid inom ett område. Kärnkraftverk är dock farligare eftersom de farliga partiklarna lever vidare och kan förstöra ett område i många år. Båda kraftverken använder vatten för att få energi, kärnkraftverken använder vatten genom att koka det och använda rörelsen av ångorna, medans vattenkraftverk använder barar rörelsen av vatten när de faller för att utvinna energi.
+
+En annan stor skillnad mellan de två energikällorna är deras verkningsgrad där vattenkraft har en verkningsgrad upp mot 90% medans fission bara har en verkningsgrad på 35%, fissionens totala produktion och vindkraftverkens produktion är fortfarande relativt lika eftersom fissionen producerar en extremt stor mängd energi, där 40% av Sveriges energi kommer från vattenkraftverk och 31% kommer från kärnkraftverk. Detta är en dock kombination av all nyttig energi för varje energikälla, detta representerar inte mängden vattenkraftverk jämfört med mängden kärnkraftverk, där det finns 3 kärnkraftverk i Sverige och 2000 vattenkraft i Sverige, där ett vattenkraftverk har en effekt av 8.1 megawatt medans ett kärnkraftverk har en effekt av ca 3300 megawatt.
+
+
+
+*Vågkraft går ej att jämföra med kärnkraft eller fusion i någon större utsträckning. De har inga likheter som är värda att diskutera och det skulle bara skillnader mellan dem. Detta skulle bara upprepa hur de olika kraftverken fungerar och inte tillföra någonting.
+
+Slutsatser
+
+Fusion
+Traditionell kärnkraft
+Vattenkraft
+Vågkraft
+
+Detta är ordningen som man borde satsa på de olika energikällorna enligt oss. Vi har redan presenterat bakgrunden om dessa energikällor så anledningarna för dessa satsningar bör vara uppenbara.
+
+Vågkraft producerar väldigt lite el och är generellt opålitlig, pga att det behövs många olika förutsättningar som behöver uppfyllas för att vågkraft ska fungera idealt tex att det blåser mycket eller att materialkostnaden är låg för att kunna rimligt bygga vågkraftverk. Till en sådan grad att det inte ens finns storskaligt idag, till och med vindkraft fungerar bättre i nuläget. Vågkraftverk är fortfarande viktigt att satsa på, bara inte till samma grad som de andra energikällorna. 
+
+
+Kärnkraft må ha värre utsläpp och byggs på icke förnybara resurser till skillnad från vattenkraft, men den producerar betydligt mycket mer el. Utan kärnkraft skulle det svenska elnätet falla sönder och vi skulle bli tvungna att köpa el från kolkraft i Tyskland och Polen. Vattenkraften kan inte hantera all elbehov i dagens Sverige själv.
+Vattenkraft förstör för miljön kring, men viktigt att notera är att kärnkraft producerar radioaktivt avfall som kan orsaka problem för miljön på andra sätt.
+Utöver detta så tänkte vi på säkerhetsriskerna och de båda har liknande förmåga att förstöra en stor mängd infrastruktur. 
+Detta innebär att vi rangordnade energikällorna baserat på mängden energi de kan producera och hur pålitliga de är, kärnkraftverk vinner över vattenkraftverk baserat på dessa kategorier.
+
+Anledningen fusion är högst är för att den producerar betydligt mer energi än alla de andra kombinerat och har inga större effekter på miljön. Dess stora nackdel är konstruktion, men när man jämför kraftverken under bruk är det inte ens en tävling.
+Detta är allt i teorin för att det inte finns något fusionskraft i bruk än men så länge som ett stort problem inte visar sig när det börjar användas så är fusion den säkraste satsningen.
+
+
+Reflektion
+Denna reflektion är inte aktuell för fysikkursen utan blev skriven under teknikkursen 2021.
+Denna uppgift hade sina upp och ner. Punkterna du gav förvirrade och informationen som var nödvändig var omöjlig att hitta. 
+Fusion och vågkraft finns inte idag och det blev därför väldigt svårt att hitta fasta siffror och information gällande logistik och liknande så fysikfrågorna i den här uppgiften faller på den punkten.
+Tidsplanen för den här uppgiften sprack på många ställen vilket innebar att det blev väldigt lätt att glömma viktig information. Skulle uppgiften inte ha lämnats in innan påsk från början? Men nu skriver vi på den vecka 18. Vi förstår att studiebesöket är till dels att skylla för detta men labbrapporten fick en extra lektion för att “den inte skulle falla ur minnet” även fast vi hade arbetat på den nyligen medans denna förblev bortglömd.
+Utöver detta så var väl också den originella idéen att för högre betyg skulle man skriva om tre energikällor. Även fast detta var en klar del av uppgiftsplaneringen så tog du ingen hänvisan till detta när du lade tidsplanen. Enligt den så skulle de ta tre lektioner per energikälla och sedan ytterligare två för diskussion. Men ifall man följde den originella planeringen skulle man få 2 lektioner per energikälla och detta är inte tillräckligt för att skriva på den nivån man söker ifall man valde tre energikällor från början. Det är av denna anledning vi inte skrev om solkraft som var i vår ursprungliga plan.
+Det verkar som att du släppte den tredje källan själv efter ett tag men detta var inte klart nog för oss.
+
+Vi har båda arbetat med liknande arbetsområden vid tidigare tillfällen men detta projekt är det största hittills. Alla lektioner må inte ha varit utnyttjade till fullo där det blev frustrerande vid vissa tillfällen att hitta exakt rätt information, men andra blev utnyttjade till fullo. Samarbetet fungerade väldigt bra och det var inte något tillfälle vi inte kunde komma överens. Båda partier var lika delaktiga i arbetet, där båda har varit och skrivit saker på i princip varje rubrik. 
+
+
+Av: Leon Björk Bartosch och Arvid Lindbäck
+
+----------------------------------------------------------------------------------------------------------------
+
+Källförteckning
+
+Borttagen sida 
+https://www.energiforetagen.se/energifakta/elsystemet/distribution/
+
+“Dammbrott”, Okänd författare, 25 april 2022
+https://vattenkraft.info/?page=21
+
+“DOE Explains…Deuterium-Tritium Fusion Reactor Fuel”, Matthew Lanctot, okänt datum
+https://www.energy.gov/science/doe-explainsdeuterium-tritium-fusion-reactor-fuel 
+
+“Effekt” Andreas Sandqvist, 10 Januari 2015
+https://youtu.be/iBDMraH2NKc
+
+“Elproduktion“ Christian Holmström, 22 Februari 2022
+https://www.ekonomifakta.se/fakta/energi/energibalans-i-sverige/elproduktion/’
+
+“Elproduktion - Tekniker för produktion av el”, Karin Byman, 2015
+https://www.iva.se/globalassets/info-trycksaker/vagval-el/vagval-el-elproduktion.pdf
+
+“Energitillförsel”, Hanna Armelius, 5 April 2022
+https://www.ekonomifakta.se/Fakta/Energi/Energibalans-i-Sverige/Energitillforsel/?nomobile=true 
+
+“Ett hållbart energisystem”, Okänd författare, okänt datum
+https://www.energiforetagen.se/energifakta/
+
+“Fjärrvärmenäten - distribution”, Eva Rydegran, 30 september 2020
+https://www.energiforetagen.se/energifakta/fjarrvarme/fjarrvarmenaten-distribution/
+
+“Forsmarks kärnkraftverk”,  Okänd författare, 2 Juli 2017
+https://www.stralsakerhetsmyndigheten.se/omraden/karnkraft/karntekniska-anlaggningar-i-drift-i-sverige/forsmark
+
+“Forsmarks produktion och driftläge”, Okänd författare, ca 2021
+https://group.vattenfall.com/se/var-verksamhet/forsmark/produktion 
+
+“Fusion och fusionsdiagnostik för nyfikna” Carl Hellesen, 8 december 2021
+https://www.physics.uu.se/forskning/tillampad-karnfysik/popularvetenskaplig-presentation/fusion/ 
+
+“Fusion reactions in stars”, Robert W Conn, okänt datum
+https://www.britannica.com/science/nuclear-fusion/Fusion-reactions-in-stars 
+
+“Fördelar och nackdelar med vågkraft” Okänd författare, okänt datum
+http://wavecraft.se/fordelar-och-nackdelar-med-vagkraft/
+
+“Genererar kraft ur alla vågor”, Peter Ardell, 14 november 2016
+https://www.kth.se/om/nyheter/centrala-nyheter/genererar-kraft-ur-alla-vagor-1.686678
+
+“Hur fungerar vattenkraft?”, Okänd författare, 25 mars 2022
+https://www.naturskyddsforeningen.se/faktablad/hur-fungerar-vattenkraft/
+
+“Hur fungerar vattenkraft?”, Okänd författare, okänt datum
+https://www.holmen.com/sv/energi/vattenkraft/om-vattenkraft/sa-fungerar-vattenkraft/
+
+“Kärnkraft” Okänd författare, okänt datum
+https://www.vattenfall.fi/sv/elavtal/energikallor/karnkraft/
+
+“Nuclear Fusion Power”, Okänd författare, Augusti 2021
+https://world-nuclear.org/information-library/current-and-future-generation/nuclear-fusion-power.aspx/ 
+
+“Så fungerar vattenkraft”, Jonathan Leman, 2021
+https://www.vattenfall.se/fokus/hallbarhet/hur-fungerar-vattenkraft/
+
+“Så fungerar ett kärnkraftverk”, Okänd författare, 1 Februari 2021
+https://www.stralsakerhetsmyndigheten.se/omraden/karnkraft/sa-fungerar-ett-karnkraftverk/ 
+
+“Uppfinning ger nytt hopp om vågkraft”, Calle Elfström, 17 Mars 2015
+https://www.svt.se/nyheter/vetenskap/vagkraft-i-takt-ger-mer-energi
+
+“Vattenkraftproduktion”, Kalle Lindholm, 3 april 2018
+https://www.energiforetagen.se/energifakta/elsystemet/produktion/vattenkraft/vattenkraftsproduktion/
+
+“Vågkraft”, Dag Kättström, 15 november 2019
+https://el.se/v%C3%A5gkraft
+
+“Vågkraft - En förnyelsebar energikälla”, Rolf, 2 mars 2022
+https://www.xn--hllbartsamhlle-gibf.nu/vagkraft-en-fornyelsebar-energikalla/
+
+“Vågkraft - Waves 2.0”, Jesper Samuelsson, 6 juni 2017
+http://www.diva-portal.org/smash/get/diva2:1114398/FULLTEXT01.pdf
+
+“Vågkraft kan ge mer energi och sol vind”, Okänd författare, 15 oktober 2018
+https://www.forskning.se/2018/10/15/vagkraft-kan-ge-mer-energi-an-sol-och-vind/#
+
+“Vågenergi och fejkad fotosyntes - fossilfri teknik att räkna med”, Okänd författare, 1 Mars 2017
+https://www.forskning.se/2017/03/01/vagenergi-och-fejkad-fotosyntes-fossilfria-teknik-att-rakna-med/
+
+“Är vattenkraft dåligt?”, Okänd författare, okänt datum
+https://h2skane.se/ar-vattenkraft-daligt
+
+
+Källkritik på utvalda källor:
+Källa 1: 
+“Vattenkraftproduktion”, Kalle Lindholm, 3 december 2018
+https://www.energiforetagen.se/energifakta/elsystemet/produktion/vattenkraft/vattenkraftsproduktion/
+
+Faktan inom artikeln har blivit bevisad många gånger av andra källor, samt så har källan referenser till andra artiklar och källor där informationen hämtades, nämligen så hämtas information från vattenfall vilket är en tillförlitlig källa, samt så finns det många andra källor som säger samma sak därmed kan det hävdas att experimentet eller undersökningen har gjorts ett antal gånger, samt så presenterar källan både beräkningar och siffror som tydliggör och gynnar källans påståenden om vattenkraft och elproduktion. Informationen har publicerats av energiföretagen.se vilket är ett företag som i huvudsak producerar och distribuerar energi och information om energikällor, källan ger också ett lätt sätt att kontakta de ansvariga för artikeln om man vill. Artikeln är dock publicerad 2018 vilket kan betyda att informationen inte är lika relevant i nutid.
+Slutsatsen som kan dras av detta är att källan och artikeln är trovärdig, där informationen presenteras med nummer och beräkningar samt källor och information som stöder beräkningarna, informationen presenteras också av ett företag som jobbar huvudsakligen med energikällor därmed är det mer troligt att informationen är tillförlitlig, dock så är artikeln lite gammal.
+
+
+Källa 2:
+“Så fungerar vattenkraft”, Jonathan Leman, 2021
+https://www.vattenfall.se/fokus/hallbarhet/hur-fungerar-vattenkraft/ 
+
+Informationen presenterad inom källan stämmer överens med många andra källor och informationen som presenteras har säkerställt tack vare många tidigare liknande experiment och artiklar. Dock så refererar källan inte till några andra källor förutom dem från samma hemsida och det finns en brist av beräkningar som påvisar artikelns påståenden och fakta, faktumen som är presenterad i alla fall mest troligt införskaffad av företaget själv, där den är publicerad av Vattenfall.se vilket är hemsidan till ett företag som jobbar i princip bara med energikällor och i huvudsak med vattenkraft. Samt så ger källan ett enkelt sätt att kontakta företaget och personen som är ansvarig för artikeln. 
+Sammanfattningsvis skulle jag hävda att källan är trovärdig även fast den inte har några beräkningar eller påvisande experiment, där den är publicerad av ett tillförlitligt och öppet företag, samt så stämmer informationen överens med andra källor.
+
+Källa 3:
+“DOE Explains…Deuterium-Tritium Fusion Reactor Fuel”, Matthew Lanctot, okänt datum
+https://www.energy.gov/science/doe-explainsdeuterium-tritium-fusion-reactor-fuel 
+Den informationen som är presenterad på denna hemsida säger ej emot andra källor och kan anses som allmän då den säger detsamma som naturvetenskapen.
+Källan nämner fusionsanläggningarna DII-D och NSTX-U så deras resultat räknas som experimentellt bevis på faktan presenterad. Dessa tester gjordes för att undersöka ion massans effekt på plasmaförvaring, turbulens och transport. Det är klart hur resultaten senare används i källan då den i huvudsak handlar om hur fusion skulle fungera i verkligheten.
+Det stod inget om upprepade försök av testerna i källan men det är medfört att det har skett flera gånger då det är anläggningar skapade precis för denna form av experiment så det skulle vara ologiskt att anta att testet bara utförts en enstaka gång.
+Forskaren i studien, Matthew Lanctot har gjort relevanta sammanfattningar av informationen som skulle framhävas i källan. Detta består av sammanfattningar om hur fusion fungerar, anläggningar där detta kan utföras samt extra fakta för att basera denna framtida energikälla i verkligheten.
+
+Denna artikel var publicerad på den amerikanska myndigheten för vetenskaps hemsida av en forskare inom kärnfysik, Matthew Lanctot. Då detta inte var en studie så har ingen referentgranskning genomförts.
+Källa 4:
+“Fusion och fusionsdiagnostik för nyfikna” Carl Hellesen, 8 december 2021
+https://www.physics.uu.se/forskning/tillampad-karnfysik/popularvetenskaplig-presentation/fusion/ 
+Likt de tre föregående källorna så kommer denna källa också överens med naturvetenskapen utan några utstående motsägelser.
+Denna artikel är en bearbetning av sammanfattning av en separat studie “Diagnosing Fuel Ions in Fusion Plasmas using Neutron Emission Spectroscopy” men inget försök lät mig ha tillgång till den i fullständighet. Därför används denna källa istället.
+Källan baserar nästintill varenda paragraf i verkligheten med något experiment, anläggning eller uppfinning så ska påvisa teorin. Detta gör det också klart för vad dessa laborationer används för. Informationen är därigenom relevant.
+Då det här är den andra källan som beskriver fusion bara i denna källkritik så är det säkert att säga att studien har upprepats. 
+Studien gjordes i relevanta sammanhang, då det var ämnat att beskriva fusion, vilket är också vad den gjorde.
+Denna studie gjordes av en forskare vid ett universitet, nämligen Acta Universitatis Upsaliensis i Uppsala. Detta är också var studien är publicerad, vilket räknas som en vetenskaplig publikation.
+Ingen information var given om studiens peer-review där jag kunde hitta det, dock så kan man anta att det har skett då det var en större studie vid ett känt universitet.
+</p>
+				</div>
+			</div>
+			<footer>
+		&copy; 2023 QyfieK
+		</footer>
+		</div>
+		
+<script>
+
+function myFunction() {
+  document.getElementById("curtain").style.height = "0px";
+  document.getElementById("contain").style.display = "flex";
+  document.getElementsByClassName("mCurtain").visibility = "visible";
+  document.getElementById("two").style.height = "0px";
+  document.getElementById("three").style.height = "0px";
+  document.getElementById("four").style.height = "0px";
+  
+}
+</script>
+	</body>
+</html>

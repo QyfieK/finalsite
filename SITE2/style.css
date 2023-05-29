@@ -1,0 +1,216 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono&display=swap');
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	font-family: 'Bebas Neue', cursive;
+	background-position: 0px -700px;
+	position: sticky;
+}
+
+.pageContainer{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-content: center;
+	justify-content: flex-end;
+}
+
+img{
+	width: 40%;
+}
+.page{
+	position: relative;
+	z-index: 1;
+	display: block;
+	justify-content: center;
+	text-align: center;
+	width: 40%;
+	padding: 2vh;
+	margin: 0 auto;
+	font-family: 'Space Mono', monospace;
+	background-color: #CAD8DC;	
+	flex-grow: 1;
+	border-radius: 25px;
+}
+.cover{
+	text-align: center;
+	position: sticky;
+	top: 90px;
+	min-height: 100px;
+	min-width: 100px;
+	display: block;
+	justify-content: center;	
+	z-index: 0;
+	flex-grow: 1;
+}
+a{
+	background-color: #6a0e9e;
+	color: black;
+	text-decoration: none;
+	display: block;
+	border-radius: 25px;
+}
+a:hover{
+	background-color: #510c79;
+}
+nav{
+	width: 20%;
+	height: 100vh;
+	float: left;
+	background-color: #5a1481;
+	position: sticky;
+	top: 10px;
+	display: flex;
+	flex-direction: column;
+	z-index: 2;	
+	flex-grow: 1;
+}
+nav>ul{
+	margin-top: 150px;
+	list-style-type: none;
+}
+li{
+	padding-top: 3vh;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 3.8vw;
+	text-align: center;
+	display: block;
+}
+aside{
+	position: fixed;
+	top: 100px;
+	display: flex;
+	flex-direction: column;
+	z-index: 400;
+	background-color: #5a1481;
+	height: 18vh;
+	width: 23vw;
+	align-content: center;
+	justify-content: center;
+	align-self: flex-end;
+	border-radius: 25px;
+	font-size: 3vw;
+	text-align: center;
+}
+.logo{
+	width: 20%
+
+}
+header{
+	background-color: #8525BE;
+	height: 10%;
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 3;
+}
+h3{
+	font-size: 4.4vw;
+	flex-grow: 1;
+	text-align: center;
+}
+footer{
+	background-color: #8525BE;
+	height: 10vh;
+	width: 100%;
+	left: 0px;
+	z-index: 1;
+	text-align: center;
+	font-size: 7vh;	
+	bottom: 90px;
+
+}
+.dropbtn {
+   background-color: #6a0e9e;
+   color: white;
+   padding: 16px;
+   font-size: 16px;
+   border: none;
+   cursor: pointer;
+   align-self: flex-end;
+   width: 23vw;
+   border-radius: 25px;
+
+}
+
+.dropdown {
+  position: relative;
+  overflow: scroll;
+  height: 400px;
+  align-self: end;
+  z-index: 500;
+  display: inline-block;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  float: right;
+  top: 25vh;
+  font-size: 3vw;
+}
+.dropdown::-webkit-scrollbar {
+	display: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+  font-size: 2vw;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #510c79;
+}
+@media only screen and (min-width: 524px) and (max-width: 800px){
+	header{
+		/*padding-top: 1.5em;*/
+		font-size: 2em;
+	}
+	h2{
+		font-size: 0.75em;
+	}
+	p{
+		font-size: 0.55em;
+	}
+	aside{
+		height: 10vh;
+	}
+}
+@media only screen and (max-width: 523px){
+	header{
+		align-content: center;
+	}
+	h3{
+		margin-top: 10px;
+		font-size: 9vw;
+	}
+	h2{
+		font-size: 0.75em;
+	}
+	p{
+		font-size: 0.55em;
+	}
+	aside{
+		height: 10vh;
+	}
+	.dropbtn{
+		font-size: 3vw;
+	}
+}

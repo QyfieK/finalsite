@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Darumadrop+One&family=Space+Mono&display=swap');
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Darumadrop One', cursive;
+	color: fff;
+	font-size: 4vh;
+}
+body{
+	background-color: #B29EFF;
+}
+header{
+	background-color: #9376FF;
+	display: block;
+	border-radius: 25px;
+	width: 66%;
+	margin-left: 17%;
+	margin-right: 17%;
+	margin-bottom: 1%;
+	margin-top: 1%;
+	transition: margin-left 2s;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  background-color: #9376FF;
+  border-radius: 25px;
+  padding: 10px;
+  width: 60vw;
+  justify-content: center;
+  grid-template-columns: 30vw 30vw;
+  transition: margin-left 2s;
+}
+.things{
+	display: flex;
+	justify-content: center;
+}
+
+.grid-container > div {
+  /*background-color: #734EFD;*/
+  border-radius: 25px;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  z-index: 9;
+  height: 20vh;
+  justify-content: center;
+  align-content: center;
+  
+  position: relative;
+ 
+}
+a{
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	text-decoration: none;
+
+}
+h1{
+	text-align: center;
+	font-family: 'Darumadrop One', cursive;
+	color: fff;
+	font-size: 4em;
+}
+h3{
+	text-align: center;
+	font-family: 'Darumadrop One', cursive;
+	color: fff;
+	font-size: 1.5em;
+}
+.background1, .background2, .background3, .background4, .background5{
+  background-image: url(images/website.jpg);
+  background-size: 100% 100%;	
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  z-index: -100; 
+  position:absolute; 
+  top:0px; 
+  right:0px; 
+  bottom:0px; 
+  left:0px;
+
+}
+.background2{
+	background-image: url(images/ps.jpg);
+}
+.background3{
+	background-image: url(images/game.jpg);
+}
+.background4{
+	background-image: url(images/text.jpg);
+}.background5{
+	background-image: url(images/me.jpg);
+}
+.title{
+	z-index: 1;
+
+	font-family: 'Darumadrop One', cursive;
+  color: fff;
+}
+.item{
+	 transition: transform 1.5s;
+	 display: flex;
+}
+.item:hover{
+	transform: scale(1.25);
+	z-index: 600;
+}
+.button{
+	 transition: transform 1.5s;
+	 margin: 1%;
+}
+ul{
+	list-style: none;
+}
+.button:hover{
+	transform: scale(1.5);
+	z-index: 600;
+}
+/*a:hover{
+	transform: scale(4);
+}*/
+#other{
+	transition: height 3s;
+	transition: width 10s;
+	transition: transform 2s;
+	height: 80%;
+	width: 100%;
+	background-color: #9376FF;
+	
+}
+#navig{
+	display: none;
+	opacity: 0%;
+	transition: opacity 2s;
+}
+footer{
+	background-color: #9376FF;
+	height: 8vh;
+	position: absolute;
+	bottom: 0;
+	z-index: 50;
+	width: 60vw;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	border-radius: 20px;
+	margin: 20vw;
+	margin-bottom: 0;
+	transition: margin-left 2s;
+
+}
+h4{
+	font-size: 3vw;
+}
+#asideContain{
+	background-color: #D2C6FF;
+	border-radius: 25px;
+	position: absolute;
+	width: 0px;
+	overflow: hidden;
+	transition: width 2s;
+	height: 100%;
+	top: 0;
+}
+#am{
+	background-color: #9376FF;
+	border-radius: 25px;
+	position: absolute;
+	overflow: hidden;
+	
+	margin: 1vw;
+
+}
+h2{
+	font-size: 3vw;
+	text-decoration: underline;
+	margin-bottom: 2%;
+}
+@media only screen and (min-width: 1002px) and (max-width: 1770px){
+	h1{
+		font-size: 9vh;
+	}
+	h3{
+		font-size: 4vw;
+	}
+	p{
+		font-size: 2.5vh;
+	}
+}
+@media only screen and (min-width: 712px) and (max-width: 1001px){
+	h1{
+		font-size: 7vh;;;
+	}
+	h3{
+		font-size: 4vw;
+	}
+	p{
+		font-size: 2vh;
+	}
+}
+@media only screen  and (max-width: 711px){
+	h1{
+		font-size: 13vw;
+	}
+	h3{
+		font-size: 6vw;
+		margin-top: 45%;
+	}
+	.title{
+		text-align: center;
+	}
+	header{
+		margin-bottom: 2vh;
+	}
+	h4{
+		font-size: 2.8vh;
+	}
+	p{
+		font-size: 1vh;
+	}
+}
+

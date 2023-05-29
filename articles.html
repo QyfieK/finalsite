@@ -1,0 +1,242 @@
+<!DOCTYP	E HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Leon BArtosch Björk Portfolio">
+		<meta name="keywords" content="Portfolio, HTML, CSS, Adobe, Photoshop">
+		<meta name="author" content="Leon Bartosch Björk">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Leon's Menagerie</title>
+		<link rel="stylesheet" type="text/css" href="hstyle.css">
+		<style>
+			body{background-color: FF91D6; 
+			position: relative;
+			}
+				.grid-container, footer, #am,  header{background-color: FF64C5}
+			#space{
+				<!--height: 50vh;-->
+				position: absolute;
+				display: block;
+				}
+			#curtain{
+				background-color: #000;
+				z-index: 198;
+				width: 100vw;
+				height: 100%;
+				transition: height 2s;
+				visibility: visible;
+				
+				
+				<!--z-index: 1000000;-->
+			}
+			#two{
+			background-color: #3A9AB0;
+			}
+			#three{
+			background-color: #DA4490;
+			}
+			#four{
+			background-color: #FFE74F;
+			}
+			.mCurtain{
+				height: 20vh;
+				border-radius: 0 0 25px 25px;
+				transition: height 2s;
+				z-index: -9827;
+			}
+			#contain{
+			display: none;
+			position: absolute;  
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			justify-content: center;
+			flex-direction: column;
+			padding-bottom: 10vh;
+			}
+			
+			.background1, .background2, .background3, .background4{
+			background-image: none;
+			background-color: FFBFE7;
+			border-color: FD37B3;
+			 filter: blur(0px);
+			-webkit-filter: blur(0px);
+			border-radius: 8%;
+			}
+			.arrow{
+			margin: 15px;
+			}
+			footer{
+			
+			background-color: #FF64C5;
+			height: 7vh;
+			position: absolute;
+			bottom: 0;
+			z-index: 50;
+			width: 60vw;
+			display: flex;
+			justify-content: center;
+			border-radius: 20px;
+			margin: 20vw;
+			margin-bottom: 0;
+			}
+			#other, #asideContain{
+			background-color: FFBFE7;
+			}
+			
+		</style>
+	</head>
+	<body onload="myFunction()">
+		<div id="space">
+			<div id = "curtain">	
+			</div>
+			<div id = "two" class="mCurtain">	
+			</div>
+			<div id = "three" class="mCurtain">	
+			</div>
+			<div id = "four" class="mCurtain">	
+			</div>
+		</div>
+		<div id="contain">
+			<div class = "arrow">
+				<a href="home.html"><img src = "images/arrow.png" height= "40px" width= "40px" alt="back"></a>
+			</div>
+			
+			<header class="port">
+				<h1>Articles</h1>
+			</header>
+			<div id="asideContain">
+		<aside id="am">
+		<h2>About Me</h2>
+		<p>I'm a student and aspiring game designer. On this site you can find various unrelated projects from my tenure at NTI. Caution beware, not everything may work as you expect, sorry about that</p>
+		</aside>
+		</div>
+			<div class="things">
+				<div class="grid-container">
+					<div class="item"><a href="articles/es.html" target="_blank">
+						<div class="background1">
+						</div>
+						<div class="title">
+							<h3>Energy Sources</h3>
+						</div>
+					</a></div>
+				<div class="item"><a href="articles/fr.html" target="_blank">
+					<div class="background2">
+					</div>
+					<div class="title">
+						<h3>Frankenstein</h3>
+					</div>
+				</a></div>
+				<div class="item"><a href="articles/sm.html" target="_blank">
+					<div class="background3">
+					</div>
+					<div class="title">
+						<h3>Social Media</h3>
+					</div>
+				</a></div>
+				<div class="item"><a href="articles/cr.html" target="_blank">
+					<div class="background4">
+					</div>
+					<div class="title">
+						<h3>Civil Rights</h3>
+					</div>
+				</a></div>
+				<div class="item" onclick ="aboutFunction()" id="about">
+				<div class="background5">
+				</div>
+				<div class="title">
+				<h3>About Me</h3>
+				</div>
+			</div>
+			<div id="other" onclick="otherFunction()">
+				<div class="title">
+				<h3 id="oText">Other</h3>
+					<nav id="navig">
+						<ul>
+							<li class="button">Options</li>
+							<li class="button">Copyright</li>
+							<li class="button" onclick="otherFunction()">Back</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			</div>
+			<footer  id="foot">
+		&copy; 2023 QyfieK
+		</footer>
+		</div>
+		
+<script>
+var aColl = document.getElementsByClassName('grid-container');
+var bColl = document.getElementsByClassName('port');
+var aboutMe = document.getElementById("asideContain");
+var oth = document.getElementById("other");
+var oText = document.getElementById("oText");
+var nav = document.getElementById("navig");
+let aboutClicked = -1;
+let otherClicked = -1;
+
+function myFunction() {
+  document.getElementById("curtain").style.height = "0px";
+  document.getElementById("contain").style.display = "block";
+  document.getElementsByClassName("mCurtain").visibility = "visible";
+  document.getElementById("two").style.height = "0px";
+  document.getElementById("three").style.height = "0px";
+  document.getElementById("four").style.height = "0px";
+  
+}
+
+function changeColor(coll, displayType){
+    for(var i=0, len=coll.length; i<len; i++)
+    {
+        coll[i].style["margin-left"] = displayType;
+    }
+}
+function aboutFunction(){
+	aboutClicked *= -1;
+	if(aboutClicked > 0){
+		changeColor(aColl, '35vw');
+		changeColor(bColl, '35vw');
+		 document.getElementById("foot").style.marginLeft = "55vw";
+		aboutMe.style.width = "30vw";
+		aboutMe.style.padding = "1%";
+		document.getElementById("am").style.padding = "2%";
+	}else{
+		changeColor(aColl, '0');
+		changeColor(bColl, '17%');
+		document.getElementById("foot").style.marginLeft = "20vw";
+		aboutMe.style.width = "0";
+		aboutMe.style.padding = "0";
+	}
+	
+}
+function otherFunction(){
+
+otherClicked *= -1;
+
+if(otherClicked > 0){
+oth.style.transform="scale(1, 1.05)";
+	/*oth.style.height = "100%";
+	oth.style.width = "100%";*/
+	oth.style.top = "0";
+	oth.style.left = "0";
+	oth.style.position = "absolute";
+	document.body.style.position = "fixed";
+	oText.style.textDecoration = "underline";
+	nav.style.display = "block";
+	nav.style.opacity = "100%";
+}else{
+	oth.style.transform="scale(1)";
+	oth.style.top = "0";
+	oth.style.left = "0";
+	oth.style.position = "relative";
+	document.body.style.position = "relative";
+	oText.style.textDecoration = "none";
+	nav.style.opacity = "0";
+	nav.style.display = "none";
+	
+	}
+}
+</script>
+	</body>
+</html>

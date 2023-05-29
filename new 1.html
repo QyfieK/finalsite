@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+body{
+  background-color: #CB9805;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.slide{
+  display: block;
+  position: relative;
+  height: 200vh;
+  width: 200vw;
+  top: -100vh;
+  background-color: #C80000; 
+  border-radius: 0%;
+  transform: scale(0)
+}
+</style>
+</head>
+<body>
+<div id="container">
+  <div class="slide one"></div>
+</div>
+<script>
+
+import { gsap } from "http://mywebsite.com/static/gsap.min.js";
+var tl = new TimelineMax({repeat: -1, yoyo: true, repeatDelay: 1});
+tl.to('.slide', 0.5, {scale: 1, transformOrigin: '50% 0%', borderRadius: '100%'});
+tl.to('.slide', 0.25, {borderRadius: '0%'}, '-=0.15');
+</script>
+</body>
+<script type="module" src="./static/app.js"></script>
+</html>
