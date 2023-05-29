@@ -1,0 +1,167 @@
+<!DOCTYP	E HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Leon Bartosch Björk Portfolio">
+		<meta name="keywords" content="Portfolio, HTML, CSS, Adobe, Photoshop">
+		<meta name="author" content="Leon Bartosch Björk">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Leon's Menagerie</title>
+		<link rel="stylesheet" type="text/css" href="../hstyle.css">
+		<style>
+			body{background-color: #91FFFB; 
+			position: relative;
+			
+			}
+				.grid-container, header, footer{background-color: #37FCF5}
+			#space{
+				<!--height: 50vh;-->
+				position: absolute;
+				display: block;
+				}
+			.things{
+			display: flex;
+			justify-content: center;
+			}
+			.grid-container{
+			width: 90vw;
+			display: flex;
+			padding: 0px;
+			margin: auto;
+			overflow: hidden;
+			}
+			p{
+			width: 100%;
+			padding: 1%;
+			}
+			#curtain{
+				background-color: #000;
+				z-index: 198;
+				width: 100vw;
+				height: 100%;
+				transition: height 2s;
+				visibility: visible;
+				
+				
+				<!--z-index: 1000000;-->
+			}
+			#two{
+			background-color: #3A9AB0;
+			}
+			#three{
+			background-color: #DA4490;
+			}
+			#four{
+			background-color: #FFE74F;
+			}
+			.mCurtain{
+				height: 20vh;
+				border-radius: 0 0 25px 25px;
+				transition: height 2s;
+				z-index: -9827;
+			}
+			#contain{
+			display: none;
+			position: absolute;  
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			justify-content: center;
+			flex-direction: column;
+			padding-bottom: 10vh;
+			}
+			
+			.background1, .background2, .background3, .background4{
+			background-image: none;
+			background-color: #BFFFFD;
+			border-color: FD37B3;
+			 filter: blur(0px);
+			-webkit-filter: blur(0px);
+			border-radius: 8%;
+			}
+			.arrow{
+			margin: 15px;
+			}
+			
+			footer{
+			
+			background-color: #FF64C5;
+			height: 7vh;
+			position: absolute;
+			bottom: 0;
+			z-index: 50;
+			width: 60vw;
+			display: flex;
+			justify-content: center;
+			border-radius: 20px;
+			margin: 20vw;
+			margin-bottom: 0;
+			}
+			
+		</style>
+	</head>
+	<body onload="myFunction()">
+		<div id="space">
+			<div id = "curtain">	
+			</div>
+			<div id = "two" class="mCurtain">	
+			</div>
+			<div id = "three" class="mCurtain">	
+			</div>
+			<div id = "four" class="mCurtain">	
+			</div>
+		</div>
+		<div id="contain">
+			<div class = "arrow">
+				<a href="home.html"><img src = "../images/arrow.png" height= "40px" width= "40px" alt="back"></a>
+			</div>
+			
+			<header>
+				<h1>Frankenstein</h1>
+			</header>
+			<div class="things">
+				<div class="grid-container">
+					<p>
+
+Frankenstein
+Frankenstein is one of, if not the most famous book from the romantic era. Written by Mary Shelley and published in 1818 it follows scientist Victor Frankenstein as he creates life in an attempt to overcome God. Although through his actions he realizes that some things should be left out from the hands of man as it can have dire consequences. 
+It’s often stated as an emblematic novel of the romantic era, but why is that? How does it fit into an era of human emotions taking the forefront instead of discovery as was prevalent in the enlightenment before it? Gloomy environments and dark characters are symbols of romantic literature, as it was the birth of the horror genre. So does it fit in?
+
+The Horror
+Frankenstein’s Monster is only behind Dracula, the most iconic horror character of all time.So of course the book has some scary stuff in it. But the novel is less of an horrific experience for the reader and more so for the characters in the book. An example of this would be when the monster first comes alive. Victor, who previously was enthusiastic about his pursuit of eternal life has this as his first thought after seeing the monster in action. “How can I describe my emotions at this catastrophe, or how delineate the wretch whom with such infinite pains and care I had endeavored to form?”(p.45)
+The book then goes on to describe the monster’s hideous appearance but it first focused on the other character’s reaction.
+Victor then has a panic attack and goes to sleep where he has a nightmare.”I thought I saw Elizabeth, in the bloom of health, walking in the streets of Ingolstadt. [...] I embraced her; but as I imprinted the first kiss on her lips, they became livid with the hue of death; her features appeared to change, and I thought that I held the corpse of my dead mother in my arms; [...] grave-worms crawling through the flannel”
+This may have been terrifying in 1818 but today it plays more into the compassion of the romantic era while still counting as horror. So about that.
+
+The Compassion
+Emotions and compassion for the world around us was emphasized heavily throughout the romantic era, almost as an act of rebellion against the cold and calculating enlightenment. Frankenstein is a chief example of this thought. If it was written during the enlightenment it would’ve focused on a scientist managing to create artificial life and procuring the secret to eternal life. But as it isn’t, it focuses on what being alive even is and prejudice against those that are different, in this case the monster. All he wants is a connection with someone, anyone. He first tries to with the blind old man and it goes well as the old man said the following: “..I am Blind, and cannot judge of your countenance, but there is something in your words that persuades me that you are sincere” (p.103)
+But when the other residents of the cottage return they immediately chase the monster out because of his appearance. Quite progressive of the time and shows how the author respected every human being no matter how they looked. In other words, they showed compassion.
+
+Is Science Worth It?
+An enlightened author would have answered “Yes, always”, but that’s not quite the case here. When the monster orders Frankenstein to create an equal to him of the opposite sex, he answers with this: “I do refuse it. [...] and no torture shall ever extort a consent from me. You may render me the most miserable of men, but you shall never make me base in my own eyes. Shall I create another like yourself, whose joint wickedness might desolate the world! Begone!” (p.111)
+He gives up his scientific ambitions for the good of mankind, out of fear of what would happen to his fellow men. It’s only later when the monster says that he’ll give up on the world of man and retreat into the wilderness with his bride that Victor considers to create another out of compassion for his creation. But ultimately he yet again gives up when the time comes to actually create the bride. He can’t bring himself to do something so inhumane yet again.
+
+Conclusion
+It’s less of a question of “Does Frankenstein fit into the romantic era?” and more of “Does the romantic era fit into Frankenstein?”, it treats the characteristics of this era less like at that time current thoughts and more like a checklist. It has horror elements, though not the scariest by current standards, it laid the groundwork for those. Compassion for others is basically the main theme of the book. How we see others and how those see us can almost be a plot summary. Science isn’t portrayed as a force of good, quite the opposite actually. This on top of the very gloomy and reflective characters and dialogue as you probably could tell from the excerpts from the text I featured. It’s the quintessential romantic book.
+</p>
+				</div>
+			</div>
+			<footer>
+		&copy; 2023 QyfieK
+		</footer>
+		</div>
+		
+<script>
+
+function myFunction() {
+  document.getElementById("curtain").style.height = "0px";
+  document.getElementById("contain").style.display = "flex";
+  document.getElementsByClassName("mCurtain").visibility = "visible";
+  document.getElementById("two").style.height = "0px";
+  document.getElementById("three").style.height = "0px";
+  document.getElementById("four").style.height = "0px";
+  
+}
+</script>
+	</body>
+</html>
