@@ -36,7 +36,9 @@ header{
 	display: flex;
 	justify-content: center;
 }
-
+#contain{
+	color: #fff;
+}
 .grid-container > div {
   /*background-color: #734EFD;*/
   border-radius: 25px;
