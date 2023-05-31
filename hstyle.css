@@ -224,6 +224,7 @@ h2{
 		font-size: 1vh;
 	}
 	#frank{
+		display: none;
 		font-size: 2vw;
 	}
 }
