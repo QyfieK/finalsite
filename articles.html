@@ -9,40 +9,40 @@
 		<title>Leon's Menagerie</title>
 		<link rel="stylesheet" type="text/css" href="hstyle.css">
 		<style>
-			body{background-color: #FF91D6; 
+			body{background-color: FF91D6; 
 			position: relative;
 			}
-				.grid-container, footer, #am, header{background-color: #FF64C5;}
+				.grid-container, header, #am, footer{background-color: FF64C5}
 			#space{
+				<!--height: 50vh;-->
 				position: absolute;
 				display: block;
 				}
 			#curtain{
 				background-color: #000;
+				z-index: 198;
 				width: 100vw;
-				height: 100vh;
+				height: 100%;
 				transition: height 2s;
 				visibility: visible;
-				z-index: 99827898989;
+				
+				
+				<!--z-index: 1000000;-->
 			}
 			#two{
 			background-color: #3A9AB0;
-				z-index: 99827898989;
 			}
 			#three{
 			background-color: #DA4490;
-				z-index: 99827898989;
-				display: none;
 			}
 			#four{
 			background-color: #FFE74F;
-				z-index: 99827898989;
 			}
 			.mCurtain{
 				height: 20vh;
 				border-radius: 0 0 25px 25px;
 				transition: height 2s;
-				
+				z-index: -9827;
 			}
 			#contain{
 			display: none;
@@ -57,8 +57,8 @@
 			
 			.background1, .background2, .background3, .background4{
 			background-image: none;
-			background-color: #FFBFE7;
-			border-color: #FD37B3;
+			background-color: FFBFE7;
+			border-color: FD37B3;
 			 filter: blur(0px);
 			-webkit-filter: blur(0px);
 			border-radius: 8%;
@@ -66,21 +66,8 @@
 			.arrow{
 			margin: 15px;
 			}
-			footer{		
-			background-color: #FF64C5;
-			height: 7vh;
-			position: absolute;
-			bottom: 0;
-			z-index: 50;
-			width: 60vw;
-			display: flex;
-			justify-content: center;
-			border-radius: 20px;
-			margin: 20vw;
-			margin-bottom: 0;
-			}
 			#other, #asideContain{
-			background-color: #FFBFE7;
+			background-color: FFBFE7;
 			}
 		</style>
 	</head>
