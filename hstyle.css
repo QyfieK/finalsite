@@ -208,9 +208,7 @@ h2{
 		font-size: 13vw;
 	}
 	h3{
-		font-size: 6vw;
-		display: none;
-		
+		font-size: 6vw;	
 	}
 	.title{
 		text-align: center;
@@ -225,8 +223,7 @@ h2{
 		font-size: 1vh;
 	}
 	#frank{
-		display: none;
-		font-size: 2vw;
+		font-size: 4vw;
 	}
 }
 
