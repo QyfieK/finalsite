@@ -38,6 +38,7 @@ header{
 }
 #contain{
 	color: #fff;
+	transition: transform 2s;
 }
 .grid-container > div {
   /*background-color: #734EFD;*/
