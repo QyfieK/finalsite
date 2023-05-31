@@ -172,7 +172,9 @@ function aboutFunction(){
 function otherFunction(){
 
 otherClicked *= -1;
-
+if(otherClicked > 0 && aboutClicked < 0){
+	aboutFunction();
+}
 if(otherClicked > 0){
 oth.style.transform="scale(1)";
 	/*oth.style.height = "100%";
