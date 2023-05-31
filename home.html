@@ -1,8 +1,8 @@
-<!DOCTYPE HTML>
+<!DOCTYP	E HTML>
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<meta name="description" content="Leon BArtosch Björk Portfolio">
+		<meta name="description" content="Leon Bartosch Björk Portfolio">
 		<meta name="keywords" content="Portfolio, HTML, CSS, Adobe, Photoshop">
 		<meta name="author" content="Leon Bartosch Björk">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -123,15 +123,14 @@
 			<h4>&copy; 2023 QyfieK</h4>
 		</footer>
 		<div>
-		<script>
+<script>
+
 var aColl = document.getElementsByClassName('grid-container');
 var bColl = document.getElementsByClassName('port');
 var aboutMe = document.getElementById("asideContain");
 var oth = document.getElementById("other");
 var oText = document.getElementById("oText");
 var nav = document.getElementById("navig");
-var about = document.getElementById("about");
-var body =  document.getElementById("bod");
 let aboutClicked = -1;
 let otherClicked = -1;
 
@@ -156,7 +155,7 @@ function aboutFunction(){
 	if(aboutClicked > 0){
 		changeColor(aColl, '35vw');
 		changeColor(bColl, '35vw');
-		 document.getElementById("foot").style.marginLeft = "38vw";
+		 document.getElementById("foot").style.marginLeft = "55vw";
 		aboutMe.style.width = "30vw";
 		aboutMe.style.padding = "1%";
 		document.getElementById("am").style.padding = "2%";
@@ -172,11 +171,9 @@ function aboutFunction(){
 function otherFunction(){
 
 otherClicked *= -1;
-if(otherClicked > 0 && aboutClicked < 0){
-	aboutFunction();
-}
+
 if(otherClicked > 0){
-oth.style.transform="scale(1)";
+oth.style.transform="scale(1, 1.05)";
 	/*oth.style.height = "100%";
 	oth.style.width = "100%";*/
 	oth.style.top = "0";
@@ -186,8 +183,6 @@ oth.style.transform="scale(1)";
 	oText.style.textDecoration = "underline";
 	nav.style.display = "block";
 	nav.style.opacity = "100%";
-	about.style.visibility="hidden";
-	body.style.backgroundColor ="#9376FF";
 }else{
 	oth.style.transform="scale(1)";
 	oth.style.top = "0";
@@ -197,30 +192,9 @@ oth.style.transform="scale(1)";
 	oText.style.textDecoration = "none";
 	nav.style.opacity = "0";
 	nav.style.display = "none";
-	about.style.visibility="visible";
-	body.style.backgroundColor ="#B29EFF";
+	
 	}
 }
-
-/*var aColl = document.getElementsByClassName('item'); //Cache the collection here, so that even a new element added with the same class later we can avoid querying this again by using the cached collection.
-var bColl = document.getElementsByClassName('grid-container');
-var cColl = document.getElementsByClassName('port');
-
-    document.getElementById('other').addEventListener('mouseover', function(){
-        changeColor(aColl, 'none');
-		changeColor(bColl, 'none');
-		changeColor(cColl, 'none');
-    });
-
-}
-function changeColor(coll, displayType){
-
-    for(var i=0, len=coll.length; i<len; i++)
-    {
-        coll[i].style["display"] = displayType;
-    }
-	document.getElementById("other").style.display = "flex";
-}*/
 
 </script>
 	</body>
