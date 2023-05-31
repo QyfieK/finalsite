@@ -79,7 +79,7 @@
 					<h3>Websites</h3>
 				</div>
 			</a></div>
-			<div class="item"><a href="photoshop.html" target="_blank">
+			<div class="item" id="p"><a href="photoshop.html" target="_blank">
 				<div class="background2">
 				</div>
 				<div class="title">
@@ -93,7 +93,7 @@
 				<h3>Games</h3>
 				</div>
 			</a></div>
-			<div class="item"><a href="articles.html" target="_blank">
+			<div class="item" id="a"><a href="articles.html" target="_blank">
 				<div class="background4">
 				</div>
 				<div class="title">
@@ -185,6 +185,8 @@ oth.style.transform="scale(1, 1.05)";
 	oText.style.textDecoration = "underline";
 	nav.style.display = "block";
 	nav.style.opacity = "100%";
+	document.getElementById("a").style.visibility = "hidden";
+	document.getElementById("p").style.visibility = "hidden";
 }else{
 	oth.style.transform="scale(1)";
 	oth.style.top = "0";
@@ -194,6 +196,8 @@ oth.style.transform="scale(1, 1.05)";
 	oText.style.textDecoration = "none";
 	nav.style.opacity = "0";
 	nav.style.display = "none";
+	document.getElementById("a").style.visibility = "visible";
+	document.getElementById("p").style.visibility = "visible";
 	
 	}
 }
